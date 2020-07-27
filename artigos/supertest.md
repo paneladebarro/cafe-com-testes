@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# Por que usar superTest ?
+# Utilizando SuperTest para os testes de Integração
 
 [SuperTest](https://github.com/visionmedia/supertest) é uma lib agnóstica à framework que tem como objetivo facilitar os testes usando HTTP de uma maneira simples e abstrata. Caso seja necessário, a lib também permite o uso mais baixo nível para um maior controle dos testes.
 
