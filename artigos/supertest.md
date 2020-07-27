@@ -6,8 +6,8 @@
 
 # Por que usar superTest ?
 
-SuperTest é uma lib agnóstica à framework que tem como objetivo facilitar os testes usando Http de uma maneira mais fácil e abstrata. Caso seja 
-necessário, a lib também permite o uso de mais baixo nível para um maior controle dos testes.
+SuperTest é uma lib agnóstica à framework que tem como objetivo facilitar os testes usando Http de uma maneira simples e abstrata. Caso seja 
+necessário, a lib também permite o uso mais baixo nível para um maior controle dos testes.
 
 # Quais o benefícios ? 
 
