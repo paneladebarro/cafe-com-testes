@@ -45,6 +45,8 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 - [Rest 101: Nomes](artigos/rest-101-nomes.md)
 
+### U
+- [Utilizando SuperTest para os testes de Integração](artigos/supertest.md)
 
 ## :heart: Como contribuir
 
