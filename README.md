@@ -41,6 +41,9 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 - [Estrutura dos testes](artigos/estrutura-dos-testes.md)
 - [Evite seeds de dados globais, adicione os dados por teste](artigos/test:evitar-seeds-globais.md)
 
+### H
+- [Heurística VADER para testes de API Rest](artigos/heuristica-vader.md)
+
 ### R
 
 - [Rest 101: Nomes](artigos/rest-101-nomes.md)
