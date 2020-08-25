@@ -37,3 +37,7 @@ Por fim validamos os timeouts e concorrência.
     <img src="../.github/vader.png" width="300" alt="Café com Testes">
   </a>
 </p>
+
+Para saber mais:
+* [VADER – a REST API test heuristic](http://qa-matters.com/2016/07/30/vader-a-rest-api-test-heuristic/)
+* [API Testing Heuristics for Developers](https://europeantestingconference.eu/slides18/Roy.pdf)
