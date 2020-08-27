@@ -45,7 +45,7 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 - [Heurística VADER para testes de API Rest](artigos/heuristica-vader.md)
 
 ### N
-- [Nomeando os Testes](atigos/nomeando-os-testes.md)
+- [Nomeando os Testes](artigos/nomeando-os-testes.md)
 
 ### R
 
