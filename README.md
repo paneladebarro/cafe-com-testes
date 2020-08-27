@@ -37,16 +37,30 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ## :heavy_check_mark: Índice de Artigos
 
+### A
+- [Allure adicionando conteúdo no report](artigos/allure-conteudo-no-report.md)
+
+
+### C
+- [Cypress Variáveis de Ambiente](artigos/cypress-variaveis-de-ambiente.md)
+
 ### E
 - [Estrutura dos testes](artigos/estrutura-dos-testes.md)
 - [Evite seeds de dados globais, adicione os dados por teste](artigos/test:evitar-seeds-globais.md)
+- [Explicando de maneira descontraída o 'Teste de Fumaça'](artigos/smoke-testing-eli5.md)
 
 ### H
 - [Heurística VADER para testes de API Rest](artigos/heuristica-vader.md)
 
+### N
+- [Nomeando os Testes](artigos/nomeando-os-testes.md)
+
 ### R
 
 - [Rest 101: Nomes](artigos/rest-101-nomes.md)
+
+### T
+- [Try/Catch: deixe os testes lidarem com as exceções](artigos/try-catch-nos-testes.md)
 
 ### U
 - [Utilizando SuperTest para os testes de Integração](artigos/supertest.md)
