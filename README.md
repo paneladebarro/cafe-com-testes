@@ -51,6 +51,9 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 - [Rest 101: Nomes](artigos/rest-101-nomes.md)
 
+### T
+- [Try/Catch: deixe os testes lidarem com as exceções](artigos/try-catch-nos-testes.md)
+
 ### U
 - [Utilizando SuperTest para os testes de Integração](artigos/supertest.md)
 
