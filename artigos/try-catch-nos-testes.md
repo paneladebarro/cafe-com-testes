@@ -33,6 +33,7 @@ Outro exemplo utilizando [ava](https://github.com/avajs/ava)
 ```javascript
 await t.throwsAsync( async () => {
     const error = await validateUser({ name: null }, validateUserName())
+    // a expectativa é que seja lançado o erro de invalid user name
     t.is(error, `invalid user name`)
   })
 ```
