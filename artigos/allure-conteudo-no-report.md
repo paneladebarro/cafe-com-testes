@@ -97,4 +97,4 @@ Na imagem a baixo podemos observar um teste que falhou, e no body do teste temos
 
  ## Cuidados
 
-  Você literalmente pode armazenar quanta informação quiser e isso pode fazer com que você tenha problemas com espaço, dependendo de onde o seu relatório é gerado. 
+  Você literalmente pode armazenar tudo e isso vai fazer com que você tenha problemas com espaço dependendo de onde isso for armazenado. 
