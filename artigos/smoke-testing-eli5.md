@@ -16,7 +16,7 @@ Uma iniciativa muito bacana para entender e explicar conceitos de uma maneira ma
 
 <p align="center">
   <a href="https://github.com/pagarme/cafe-com-testes">
-    <img src="../.github/cafecomtestes.png" alt="Batmóvel da Lego versão de 1989" width="400px">
+    <img src="../.github/batmobile-lego.jpeg" alt="Batmóvel da Lego versão de 1989" width="350px">
   </a>
 </p>
 
