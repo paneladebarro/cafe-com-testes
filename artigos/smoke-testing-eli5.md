@@ -36,4 +36,5 @@ Se algum destes testes de fumaça tivessem falhado, você teria imediatamente re
 
 -----
 
-> Este artigo é uma tradução de uma postagem muito bacana, créditos ao criador da história! :trophy: [Explain "Smoke Test" like I'm five](https://dev.to/krukru/comment/14a0f)
+> Este artigo é uma tradução de uma postagem muito bacana, créditos ao criador da história! :trophy: [Explain "Smoke Test" like I'm five](https://dev.to/krukru/comment/14a0f)<br/>
+> Um link para aprender de verdade sobre 'smoke testing': :books: [What is Smoke Testing? Guru99](https://www.guru99.com/smoke-testing.html)
