@@ -31,7 +31,7 @@ Você pode mover isso para uma variável de ambiente Cypress como exemplificando
 cy.request(Cypress.env('EXTERNAL_API')) // this will point to a dynamic env var
 ```
 
-# Settting
+# Setting
 
 Existem diferentes de definir variáveis de ambiente. Cada um deles tem um caso de uso ligeiramente diferente.
 E nesse tutorial vamos nos concentrar em duas opções: configuration file e cypress.env.json
