@@ -7,6 +7,7 @@
 # Variáveis de ambiente no Cypress
 
 Frequentemente, precisamos escrever testes e2e para verificação de processos que solicitam recursos protegidos, que exigem credenciais apropriadas. Por exemplo, um formulário de login que espera um nome de usuário e senha válidos, um terminal que usa uma chave API , uma solicitação HTTP que precisa de um token verificável. Uma das abordagens comuns é salvar os dados protegidos como variáveis de ambiente.
+
 O Cypress oferece várias maneiras de trabalhar com variáveis de ambiente. Em sua [documentação](https://docs.cypress.io/guides/guides/environment-variables.html#Setting) sobre variáveis de ambiente listou seus usos e comparando os prós / contras de cada opção. 
 
 # Por que precisamos de uma variável de ambiente?
@@ -62,10 +63,10 @@ Cypress.env('login_password') // 'Senha123'
 
 ```
 
-## Benefícios
+### Benefícios
 Essa opção é ótima para valores que precisam ser verificados no controle de origem e permanecem os mesmos em todas as máquinas.
 
-##  Desvantagens
+### Desvantagens
 A desvantagem dessa opção é que ela só funciona para valores que devem ser iguais em todas as máquinas.
 
 ## Opção nº 2 cypress.env.json
@@ -89,7 +90,7 @@ Cypress.env('api_server') // 'http://localhost:8888/api/v1/'
 
 ```
 
-##Benefícios
+### Benefícios
 
 1. Esta opção fornece um arquivo dedicado apenas para variáveis de ambiente.
 2. Isso permitirá que você gere este arquivo a partir de outros processos de construção.
@@ -97,6 +98,7 @@ Cypress.env('api_server') // 'http://localhost:8888/api/v1/'
 4. Esta opção suporta campos aninhados (objetos), por exemplo, {testUser: {nome: '...', email: '...'}}.
 
 
-## Desvantagens
+### Desvantagens
+
 1. Este é outro arquivo com o qual você tem que lidar.
 2. Pode ser um exagero para 1 ou 2 variáveis de ambiente.
