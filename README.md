@@ -37,6 +37,9 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ## :heavy_check_mark: Índice de Artigos
 
+### C
+- [Cypress Variáveis de Ambiente](artigos/cypress-variaveis-de-ambiente.md)
+
 ### E
 - [Estrutura dos testes](artigos/estrutura-dos-testes.md)
 - [Evite seeds de dados globais, adicione os dados por teste](artigos/test:evitar-seeds-globais.md)
