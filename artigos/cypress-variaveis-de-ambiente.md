@@ -40,7 +40,7 @@ Você não deve se sentir obrigado a escolher apenas um método, inclusive na do
 
 Quando você executa seus testes, você pode usar a função Cypress.env para acessar os valores de suas variáveis de ambiente.
 
-## Arquivo de configuração da opção # 1
+## Opção nº 1 Arquivo de configuração 
 
 Qualquer par de chave / valor que você definir em seu arquivo de configuração ( cypress.json por padrão) na chave env se tornará uma variável de ambiente.
 
