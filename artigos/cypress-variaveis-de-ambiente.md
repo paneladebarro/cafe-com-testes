@@ -8,7 +8,7 @@
 
 Frequentemente, precisamos escrever testes e2e para verificação de processos que solicitam recursos protegidos, que exigem credenciais apropriadas. Por exemplo, um formulário de login que espera um nome de usuário e senha válidos, um terminal que usa uma chave API , uma solicitação HTTP que precisa de um token verificável. Uma das abordagens comuns é salvar os dados protegidos como variáveis de ambiente.
 
-O Cypress oferece várias maneiras de trabalhar com variáveis de ambiente. Em sua [documentação](https://docs.cypress.io/guides/guides/environment-variables.html#Setting) sobre variáveis de ambiente são listadas diferenças opções demonstrando o seu uso e prós e contra de cada abordagem.
+O Cypress oferece várias maneiras de trabalhar com variáveis de ambiente. Em sua [documentação](https://docs.cypress.io/guides/guides/environment-variables.html#Setting) sobre variáveis de ambiente são listadas diferentes opções demonstrando o seu uso e prós e contras de cada abordagem.
 
 # Por que precisamos de uma variável de ambiente?
 
