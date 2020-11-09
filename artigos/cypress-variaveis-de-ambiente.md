@@ -18,7 +18,7 @@ Variáveis de ambiente são muito úteis quando:
 2. Os valores são diferentes em vários ambientes: (dev, staging, qa, prod, hml, sandbox)
 3. Os valores são altamente dinâmicos e mudam com frequência.
 4. Você pode alterar facilmente as variáveis de ambiente, especialmente quando estiver executando em CI.
-5. Existem valores protegidos que não podem ser expostos por segurança
+5. Você está lidando com credenciais que não podem ser expostas por segurança
 
 Ao invés de colocar diretamente no seu código
 
