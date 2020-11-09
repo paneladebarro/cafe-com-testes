@@ -6,7 +6,7 @@
 
 # Variáveis de ambiente no Cypress
 
-Frequentemente, precisamos escrever testes e2e para verificação de processos que solicitam recursos protegidos, que exigem credenciais apropriadas. Por exemplo, um formulário de login que espera um nome de usuário e senha válidos, um terminal que usa uma chave API, uma solicitação HTTP que precisa de um token verificável. Uma das abordagens comuns é salvar os dados protegidos como variáveis de ambiente.
+Frequentemente precisamos escrever testes e2e para verificação de processos que solicitam recursos protegidos ou que exigem credenciais apropriadas. Por exemplo, um formulário de login que espera um nome de usuário e senha válidos, um terminal que usa uma chave API ou uma solicitação HTTP que precisa de um token verificável. Uma das abordagens comuns é salvar os dados protegidos como variáveis de ambiente.
 
 O Cypress oferece várias maneiras de trabalhar com variáveis de ambiente. Em sua [documentação](https://docs.cypress.io/guides/guides/environment-variables.html#Setting) sobre variáveis de ambiente são listadas diferentes opções demonstrando o seu uso, e também prós e contras de cada abordagem.
 
@@ -14,11 +14,11 @@ O Cypress oferece várias maneiras de trabalhar com variáveis de ambiente. Em s
 
 Variáveis de ambiente são muito úteis quando:
 
-1. Os valores são diferentes nas máquinas do desenvolvedor.
-2. Os valores são diferentes em vários ambientes: (dev, staging, qa, prod, hml, sandbox)
-3. Os valores são altamente dinâmicos e mudam com frequência.
-4. Você pode alterar facilmente as variáveis de ambiente, especialmente quando estiver executando em CI.
-5. Você está lidando com credenciais que não podem ser expostas por segurança
+1. Os valores são diferentes nas máquinas do desenvolvedor;
+2. Os valores são diferentes em vários ambientes: dev, staging, qa, prod, hml, sandbox;
+3. Os valores são altamente dinâmicos e mudam com frequência;
+4. Você pode alterar facilmente as variáveis de ambiente, especialmente quando estiver executando em CI;
+5. Você está lidando com credenciais que não podem ser expostas por segurança;
 
 Ao invés de colocar diretamente no seu código
 
@@ -26,7 +26,7 @@ Ao invés de colocar diretamente no seu código
 cy.request('https://api.acme.corp') // this will break on other environments`
 ```
 
-Você pode mover para uma variável de ambiente Cypress como exemplificando abaixo, em que foi criada uma variável de ambiente chamada EXTERNAL_API deixando o código com uma melhor manutenibilidade e liberdade de execução em diferentes ambientes.
+Você pode mover para uma variável de ambiente Cypress como exemplificado abaixo, em que foi criada uma variável de ambiente chamada EXTERNAL_API deixando o código com uma melhor manutenibilidade e liberdade de execução em diferentes ambientes.
 
 ```javascript
 cy.request(Cypress.env('EXTERNAL_API')) // this will point to a dynamic env var
@@ -34,15 +34,13 @@ cy.request(Cypress.env('EXTERNAL_API')) // this will point to a dynamic env var
 
 # Setting
 
-Existem diferentes formas de definir variáveis de ambiente. Cada uma delas tem um caso de uso ligeiramente diferente.
-E nesse tutorial vamos nos concentrar em duas opções: configuration file e cypress.env.json
-Você não deve se sentir obrigado a escolher apenas um método, inclusive na documentação você terá acesso a outros métodos.
+Existem diferentes formas de definir variáveis de ambiente. Cada uma delas tem um caso de uso ligeiramente diferente.E nesse tutorial vamos nos concentrar em duas opções: configuration file e cypress.env.json. Você não deve se sentir obrigado a escolher apenas um método, inclusive na documentação você terá acesso a outros métodos.
 
 Quando você executa seus testes, você pode usar a função Cypress.env para acessar os valores de suas variáveis de ambiente.
 
 ## Opção nº 1 Arquivo de configuração 
 
-Qualquer par de chave / valor que você definir em seu arquivo de configuração ( cypress.json por padrão) na chave env se tornará uma variável de ambiente.
+Qualquer par de chave/valor que você definir em seu arquivo de configuração (cypress.json por padrão) na chave env se tornará uma variável de ambiente.
 
 ```json
 {
@@ -74,9 +72,9 @@ A desvantagem dessa opção é que ela só funciona para valores que devem ser i
 
 ## Opção nº 2 cypress.env.json
 
-Alternativamente, você pode decidir criar seu próprio arquivo cypress.env.json que o Cypress verificará automaticamente. Os valores neste arquivo sobrescreverão variáveis de ambiente conflitantes em seu arquivo de configuração ( cypress.json por padrão).
+Alternativamente, você pode decidir criar seu próprio arquivo cypress.env.json que o Cypress verificará automaticamente. Os valores neste arquivo sobrescreverão variáveis de ambiente conflitantes em seu arquivo de configuração (cypress.json por padrão).
 
-Esta é uma estratégia muito útil porque, se você adicionar cypress.env.json ao seu arquivo .gitignore , os valores no arquivo podem ser diferentes para cada máquina de desenvolvedor ou ambiente sem nenhum problema.
+Esta é uma estratégia muito útil porque, se você adicionar cypress.env.json ao seu arquivo .gitignore, os valores no arquivo podem ser diferentes para cada máquina de desenvolvedor ou ambiente sem nenhum problema.
 
 ```json
 {
