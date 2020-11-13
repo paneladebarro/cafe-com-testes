@@ -37,6 +37,10 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ## :heavy_check_mark: Índice de Artigos
 
+### A
+- [Allure adicionando conteúdo no report](artigos/allure-conteudo-no-report.md)
+
+
 ### C
 - [Cypress Variáveis de Ambiente](artigos/cypress-variaveis-de-ambiente.md)
 
