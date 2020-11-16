@@ -13,9 +13,9 @@ Você já sentiu falta de alguma informação no seu relatório de execução de
 
 ## Porque adicionar ou anexar conteúdo aos report dos testes
 
-Imagina aquele teste End to End, mobile, aque é intermitênte rodando no CI, seria interessante ter um video disso correto ?, ou aquele teste de api que você quer conferir o que esta retorando no BODY ? 
+Imagine aquele teste end-to-end, seja web ou mobile, que é intermitente e quebra aleatoriamente quando executado no CI, seria interessante ter um vídeo da execução para saber o que aconteceu, certo? Ou aquele teste de API, que você quer conferir qual foi exatamente o body de retorno. 
 
-Com o Volume maior de informações decisões se tornam mais acertivas e fáceis. 
+Tendo acesso a mais informações você consegue tomar decisões mais assertivas e confiáveis. 
 
 
 ## Parar de enrolar e bora para o código 
