@@ -96,5 +96,5 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
 
  ## Cuidados
 
-  Você literalmente pode armazenar tudo e isso vai fazer com que você tenha problemas com espaço dependendo de onde isso for armazenado. 
+  Você literalmente pode armazenar quanta informação quiser e isso pode fazer com que você tenha problemas com espaço, dependendo de onde o seu relatório é geraodo. 
 
