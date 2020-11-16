@@ -89,7 +89,7 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
  https://github.com/zaqqaz/jest-allure
 
 
- ## Beneficios 
+ ## Benefícios 
   
   Ter mais informações que já são geradas nos testes. 
   Centralizar a informação em um unico lugar
