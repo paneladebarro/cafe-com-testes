@@ -61,7 +61,7 @@ O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, 
 O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
 
   Aqui vai uma dica de tipos de arquivos que podemos adicionar:
-    '''Ruby'''
+
 * "text/plain"
 * "application/xml"
 * "text/csv"
