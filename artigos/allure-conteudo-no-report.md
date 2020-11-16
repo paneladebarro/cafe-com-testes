@@ -24,7 +24,7 @@ Como o Allure tem suporte para várias linguagens, e às vezes existem diferenç
 
 Antes de mais nada, devemos pensar onde aquela informação será incorporada.
 
-Pensando em um caso de teste padrão usando javascript onde temos um 'Describe' para uma "suite" de testes e um 'it' para cada teste, e queremos uma informação da suite inteira. Podemos por o comando 
+Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o comando:
 
   JS Jest
   reporter.addAttachment(name: string, buffer: any, type: string)
