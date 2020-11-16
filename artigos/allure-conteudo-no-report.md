@@ -26,13 +26,15 @@ Antes de mais nada, devemos pensar onde aquela informação será incorporada.
 
 Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o comando:
 
-  JS Jest
-  reporter.addAttachment(name: string, buffer: any, type: string)
+```javascript
+reporter.addAttachment(name: string, buffer: any, type: string)
   
-  Ruby
-  Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
+Mesmo exemplo em Ruby:
 
-  '''Não precisei fazer nenhum tipo de import no JS Jest, porque é feita a injeção quando vai executar o código.'''
+```ruby
+Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
+
+> Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
   Dentro de um 'AfterAll', e automagicamente o allure ira anexar dentro da suite 
 
@@ -47,29 +49,28 @@ E também podemos fazer um em cada step, aqui tem um detalhe da cada framework, 
 
 Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código. 
 
-  JS
-  reporter.addAttachment(name: string, buffer: any, type: string)
+```javascript
+reporter.addAttachment(name: string, buffer: any, type: string)
 
-  Primeiro parametro é o nome que vai parar no anéxo. 
-  No caso 'body', mas aqui pode ser qualquer string.
+O primeiro parâmetro é o nome que aparecer no anexo. No caso 'body', mas aqui pode ser qualquer string.
 
-  Segundo é o contéudo, um texto, uma imagem, um video, um CSV entre outros. 
+O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
 
-  O terceito é o tipo do arquivo que você esta subindo, em alguma linguagens existe um enum que facilita esse ponto, em outras é boa sorte. 
+O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
 
   Aqui vai uma dica de tipos de arquivos que podemos adicionar:
     '''Ruby'''
-    "text/plain"
-    "application/xml"
-    "text/csv"
-    "text/tab-separated-values"
-    "text/css"
-    "text/uri-list"
-    "image/svg+xml"
-    "image/png"
-    "application/json"
-    "video/webm"
-    "image/jpeg"
+* "text/plain"
+* "application/xml"
+* "text/csv"
+* "text/tab-separated-values"
+* "text/css"
+* "text/uri-list"
+* "image/svg+xml"
+* "image/png"
+* "application/json"
+* "video/webm"
+* "image/jpeg"
 
     JS
 
