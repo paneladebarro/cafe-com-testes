@@ -22,7 +22,7 @@ Tendo acesso a mais informações você consegue tomar decisões mais assertivas
 
 Como o Allure tem suporte para várias linguagens, e às vezes existem diferenças na integração, eu aconselho a olhar na documentação como é feito especificamente para a linguagem/framework que você está utilizando. [documentação](http://allure.qatools.ru/)
 
-Antes de mais nada deveremos pensar onde aquela informação será incorporada,
+Antes de mais nada, devemos pensar onde aquela informação será incorporada.
 
 Pensando em um caso de teste padrão usando javascript onde temos um 'Describe' para uma "suite" de testes e um 'it' para cada teste, e queremos uma informação da suite inteira. Podemos por o comando 
 
