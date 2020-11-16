@@ -18,7 +18,7 @@ Imagine aquele teste end-to-end, seja web ou mobile, que é intermitente e quebr
 Tendo acesso a mais informações você consegue tomar decisões mais assertivas e confiáveis. 
 
 
-## Parar de enrolar e bora para o código 
+## Chega de enrolar e bora para o código 
 
 Como o Allure tem suporte para varias linguagens e as vezes existem um pequeno problema de integração então aconcelho a olhar na documentação como é feito especificamente para a linguagem/framework que esta utilizando. [documentação](http://allure.qatools.ru/)
 
