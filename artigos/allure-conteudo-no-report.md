@@ -20,7 +20,7 @@ Tendo acesso a mais informações você consegue tomar decisões mais assertivas
 
 ## Chega de enrolar e bora para o código 
 
-Como o Allure tem suporte para varias linguagens e as vezes existem um pequeno problema de integração então aconcelho a olhar na documentação como é feito especificamente para a linguagem/framework que esta utilizando. [documentação](http://allure.qatools.ru/)
+Como o Allure tem suporte para várias linguagens, e às vezes existem diferenças na integração, eu aconselho a olhar na documentação como é feito especificamente para a linguagem/framework que você está utilizando. [documentação](http://allure.qatools.ru/)
 
 Antes de mais nada deveremos pensar onde aquela informação será incorporada,
 
