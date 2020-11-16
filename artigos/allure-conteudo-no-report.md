@@ -8,7 +8,7 @@
 
 Você já sentiu falta de alguma informação no seu relatório de execução de testes? Se a resposta para essa pergunta for sim, temos a solução para o seu problema! Neste artigo iremos abordar as vantagens e como adicionar mais conteúdo no Allure Report.
 
-*Como o allure é muito grande esse será 1 de alguns artigos que iremos abordar. 
+> Como o Allure tem muito conteúdo, esse será o primeiro de uma série de artigos em que iremos abordá-lo.  
 
 
 ## Por que adicionar ou anexar conteúdo aos relatórios de execução dos testes?
