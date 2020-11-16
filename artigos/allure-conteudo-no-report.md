@@ -91,8 +91,8 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
 
  ## Benefícios 
   
-  Ter mais informações que já são geradas nos testes. 
-  Centralizar a informação em um unico lugar
+* Ter mais informações, que já são geradas nos testes; 
+* Centralizar as informações em um único lugar;
 
  ## Cuidados
 
