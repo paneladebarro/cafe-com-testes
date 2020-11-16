@@ -6,7 +6,7 @@
 
 # Allure adicionando conteúdo no report 
 
-Olá a todos você sempre sentiu uma falta no report dos seus testes? , achou que faltava alguma informação ? Então seus problemas acabaram. Neste artigo iremos abordar as vantagens e como adicionar mais conteúdo no Allure. 
+Você já sentiu falta de alguma informação no seu relatório de execução de testes? Se a resposta para essa pergunta for sim, temos a solução para o seu problema! Neste artigo iremos abordar as vantagens e como adicionar mais conteúdo no Allure Report.
 
 *Como o allure é muito grande esse será 1 de alguns artigos que iremos abordar. 
 
@@ -97,4 +97,3 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
  ## Cuidados
 
   Você literalmente pode armazenar tudo e isso vai fazer com que você tenha problemas com espaço dependendo de onde isso for armazenado. 
-
