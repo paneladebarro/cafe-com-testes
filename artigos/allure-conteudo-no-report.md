@@ -24,7 +24,7 @@ Como o Allure tem suporte para várias linguagens, e às vezes existem diferenç
 
 Antes de mais nada, devemos pensar onde aquela informação será incorporada.
 
-Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o comando:
+Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o código em qualquer parte do teste:
 
 ```javascript
 reporter.addAttachment(name: string, buffer: any, type: string)
@@ -34,15 +34,17 @@ Mesmo exemplo em Ruby:
 ```ruby
 Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
 
+Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique se de ter a informação que deseja anexar.
+
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
   Dentro de um 'AfterAll', e automagicamente o allure ira anexar dentro da suite 
+   
 
   também é possivel anexar dentro do teste alterando apenas o 'AfterAll' para um 'AfterEach' e os anexos irão para dentro do teste. 
 
-Já que utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, colocando utilizando o afterFeature que alguns frameworks dão suporte. 
-Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos. 
-E também podemos fazer um em cada step, aqui tem um detalhe da cada framework, alguns frameworks tem um 'afterStep' o que ajuda muito nesse tipo de implementação, em outros não tem esse suporte você tendo que colocar no final de cada passo(step) o código para anexar o conteúdo. 
+Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
+Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
 
 
 ### O que anexar ? 
@@ -52,7 +54,7 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
 ```javascript
 reporter.addAttachment(name: string, buffer: any, type: string)
 
-O primeiro parâmetro é o nome que aparecer no anexo. No caso 'body', mas aqui pode ser qualquer string.
+O primeiro parâmetro é o nome que aparecer no anexo. Aqui pode ser qualquer string.
 
 O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
 
@@ -71,8 +73,6 @@ O terceito é o tipo do arquivo que você está anexando, em alguma linguagens e
 * "application/json"
 * "video/webm"
 * "image/jpeg"
-
-    JS
 
 
 ### Exemplo
