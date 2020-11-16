@@ -38,10 +38,12 @@ Lembrando que os as linhas de código podem ser adicionadas a qualquer momento d
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
-  Dentro de um 'AfterAll', e automagicamente o allure ira anexar dentro da suite 
-   
+  ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
 
-  também é possivel anexar dentro do teste alterando apenas o 'AfterAll' para um 'AfterEach' e os anexos irão para dentro do teste. 
+  Exemplo:
+    afterEach(() => {
+      reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
+    })
 
 Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
 Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
