@@ -11,7 +11,7 @@ Você já sentiu falta de alguma informação no seu relatório de execução de
 *Como o allure é muito grande esse será 1 de alguns artigos que iremos abordar. 
 
 
-## Porque adicionar ou anexar conteúdo aos report dos testes
+## Por que adicionar ou anexar conteúdo aos relatórios de execução dos testes?
 
 Imagine aquele teste end-to-end, seja web ou mobile, que é intermitente e quebra aleatoriamente quando executado no CI, seria interessante ter um vídeo da execução para saber o que aconteceu, certo? Ou aquele teste de API, que você quer conferir qual foi exatamente o body de retorno. 
 
