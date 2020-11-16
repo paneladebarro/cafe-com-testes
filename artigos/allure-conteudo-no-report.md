@@ -6,33 +6,35 @@
 
 # Allure adicionando conteúdo no report 
 
-Olá a todos você sempre sentiu uma falta no report dos seus testes? , achou que faltava alguma informação ? Então seus problemas acabaram. Neste artigo iremos abordar as vantagens e como adicionar mais conteúdo no Allure. 
+Você já sentiu falta de alguma informação no seu relatório de execução de testes? Se a resposta para essa pergunta for sim, temos a solução para o seu problema! Neste artigo iremos abordar as vantagens e como adicionar mais conteúdo no Allure Report.
 
-*Como o allure é muito grande esse será 1 de alguns artigos que iremos abordar. 
-
-
-## Porque adicionar ou anexar conteúdo aos report dos testes
-
-Imagina aquele teste End to End, mobile, aque é intermitênte rodando no CI, seria interessante ter um video disso correto ?, ou aquele teste de api que você quer conferir o que esta retorando no BODY ? 
-
-Com o Volume maior de informações decisões se tornam mais acertivas e fáceis. 
+> Como o Allure tem muito conteúdo, esse será o primeiro de uma série de artigos em que iremos abordá-lo.  
 
 
-## Parar de enrolar e bora para o código 
+## Por que adicionar ou anexar conteúdo aos relatórios de execução dos testes?
 
-Como o Allure tem suporte para varias linguagens e as vezes existem um pequeno problema de integração então aconcelho a olhar na documentação como é feito especificamente para a linguagem/framework que esta utilizando. [documentação](http://allure.qatools.ru/)
+Imagine aquele teste end-to-end, seja web ou mobile, que é intermitente e quebra aleatoriamente quando executado no CI, seria interessante ter um vídeo da execução para saber o que aconteceu, certo? Ou aquele teste de API, que você quer conferir qual foi exatamente o body de retorno. 
 
-Antes de mais nada deveremos pensar onde aquela informação será incorporada,
+Tendo acesso a mais informações você consegue tomar decisões mais assertivas e confiáveis. 
 
-Pensando em um caso de teste padrão usando javascript onde temos um 'Describe' para uma "suite" de testes e um 'it' para cada teste, e queremos uma informação da suite inteira. Podemos por o comando 
 
-  JS Jest
-  reporter.addAttachment(name: string, buffer: any, type: string)
+## Chega de enrolar e bora para o código 
+
+Como o Allure tem suporte para várias linguagens, e às vezes existem diferenças na integração, eu aconselho a olhar na documentação como é feito especificamente para a linguagem/framework que você está utilizando. [documentação](http://allure.qatools.ru/)
+
+Antes de mais nada, devemos pensar onde aquela informação será incorporada.
+
+Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o comando:
+
+```javascript
+reporter.addAttachment(name: string, buffer: any, type: string)
   
-  Ruby
-  Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
+Mesmo exemplo em Ruby:
 
-  '''Não precisei fazer nenhum tipo de import no JS Jest, porque é feita a injeção quando vai executar o código.'''
+```ruby
+Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
+
+> Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
   Dentro de um 'AfterAll', e automagicamente o allure ira anexar dentro da suite 
 
@@ -47,34 +49,33 @@ E também podemos fazer um em cada step, aqui tem um detalhe da cada framework, 
 
 Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código. 
 
-  JS
-  reporter.addAttachment(name: string, buffer: any, type: string)
+```javascript
+reporter.addAttachment(name: string, buffer: any, type: string)
 
-  Primeiro parametro é o nome que vai parar no anéxo. 
-  No caso 'body', mas aqui pode ser qualquer string.
+O primeiro parâmetro é o nome que aparecer no anexo. No caso 'body', mas aqui pode ser qualquer string.
 
-  Segundo é o contéudo, um texto, uma imagem, um video, um CSV entre outros. 
+O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
 
-  O terceito é o tipo do arquivo que você esta subindo, em alguma linguagens existe um enum que facilita esse ponto, em outras é boa sorte. 
+O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
 
-  Aqui vai uma dica de tipo de arquivos que podemos adicionar.
+  Aqui vai uma dica de tipos de arquivos que podemos adicionar:
     '''Ruby'''
-    "text/plain"
-    "application/xml"
-    "text/csv"
-    "text/tab-separated-values"
-    "text/css"
-    "text/uri-list"
-    "image/svg+xml"
-    "image/png"
-    "application/json"
-    "video/webm"
-    "image/jpeg"
+* "text/plain"
+* "application/xml"
+* "text/csv"
+* "text/tab-separated-values"
+* "text/css"
+* "text/uri-list"
+* "image/svg+xml"
+* "image/png"
+* "application/json"
+* "video/webm"
+* "image/jpeg"
 
     JS
 
 
-### Exemplo de como fica. 
+### Exemplo
 
 <p align="center">
     <img src="https://docs.qameta.io/allure/images/testcase.png" alt="Exemplo">
@@ -89,10 +90,10 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
  https://github.com/zaqqaz/jest-allure
 
 
- ## Beneficios 
+ ## Benefícios 
   
-  Ter mais informações que já são geradas nos testes. 
-  Centralizar a informação em um unico lugar
+* Ter mais informações, que já são geradas nos testes; 
+* Centralizar as informações em um único lugar;
 
  ## Cuidados
 
