@@ -74,7 +74,7 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
     JS
 
 
-### Exemplo de como fica. 
+### Exemplo
 
 <p align="center">
     <img src="https://docs.qameta.io/allure/images/testcase.png" alt="Exemplo">
