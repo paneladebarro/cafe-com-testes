@@ -57,7 +57,7 @@ Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código.
 
   O terceito é o tipo do arquivo que você esta subindo, em alguma linguagens existe um enum que facilita esse ponto, em outras é boa sorte. 
 
-  Aqui vai uma dica de tipo de arquivos que podemos adicionar.
+  Aqui vai uma dica de tipos de arquivos que podemos adicionar:
     '''Ruby'''
     "text/plain"
     "application/xml"
