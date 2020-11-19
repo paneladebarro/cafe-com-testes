@@ -35,11 +35,9 @@ Mesmo exemplo em Ruby:
 Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
 ```
 
-O primeiro parâmetro é o nome que aparecer no anexo. Aqui pode ser qualquer string.
-
-O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
-
-O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
+> o primeiro parâmetro é o nome que vai aparecer no anexo, aqui você pode usar qualquer _string_
+> o segundo se refere ao conteúdo, que pode ser um texto, uma imagem, um vídeo, um CSV, entre outros. 
+> o terceiro é o tipo do arquivo que você está anexando, em alguma linguagens existe um _enum_ que facilita esse ponto.
 
 ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
 
@@ -50,7 +48,7 @@ Exemplo:
   })
 ```
 Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, apenas uma vez. 
-Lembrando, que 'body' é o nome no qual vai ficar o anexo, e o 'response['body']' é uma variavel global do teste, que fica reclicando com o resultado da reposta da chamada de API.
+Lembrando, que 'body' é o nome que será dado ao seu anexo, e o 'response['body']' é uma variável global do teste, que fica reciclando com o resultado da reposta da chamada de API.
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
