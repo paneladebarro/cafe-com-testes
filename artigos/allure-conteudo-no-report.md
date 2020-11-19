@@ -47,7 +47,7 @@ Exemplo:
     reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
   })
 ```
-Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, apenas uma vez. 
+Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, e sim apenas uma vez. 
 Lembrando, que 'body' é o nome que será dado ao seu anexo, e o 'response['body']' é uma variável global do teste, que fica reciclando com o resultado da reposta da chamada de API.
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
