@@ -52,8 +52,6 @@ Exemplo:
 Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, apenas uma vez. 
 Lembrando, que 'body' é o nome no qual vai ficar o anexo, e o 'response['body']' é uma variavel global do teste, que fica reclicando com o resultado da reposta da chamada de API.
 
-Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique de ter a informação que deseja anexar. 
-
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
 Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
