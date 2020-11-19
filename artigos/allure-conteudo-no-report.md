@@ -24,47 +24,43 @@ Como o Allure tem suporte para várias linguagens, e às vezes existem diferenç
 
 Antes de mais nada, devemos pensar onde aquela informação será incorporada.
 
-Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste, e queremos uma informação da suíte inteira. Podemos utilizar o código em qualquer parte do teste:
+Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe' para uma "suíte" de testes e um 'it' para cada caso de teste. Podemos utilizar o código em qualquer parte do caso teste:
 
 ```javascript
 reporter.addAttachment(name: string, buffer: any, type: string)
 ```
-
 Mesmo exemplo em Ruby:
 
 ```ruby
 Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
 ```
 
-Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique de ter a informação que deseja anexar.
+O primeiro parâmetro é o nome que aparecer no anexo. Aqui pode ser qualquer string.
+
+O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
+
+O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
+
+ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
+
+Exemplo:
+```javascript jest
+  afterEach(() => {
+    reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
+  })
+```
+Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, apenas uma vez. 
+Lembrando, que 'body' é o nome no qual vai ficar o anexo, e o 'response['body']' é uma variavel global do teste, que fica reclicando com o resultado da reposta da chamada de API.
+
+Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique de ter a informação que deseja anexar. 
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
-
-  ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
-
-  Exemplo:
-  ```javascript jest
-    afterEach(() => {
-      reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
-    })
-  ```
 
 Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
 Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
 
 
 ### O que anexar ? 
-
-Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código. 
-
-```javascript jest
-reporter.addAttachment(name: string, buffer: any, type: string)
-```
-O primeiro parâmetro é o nome que aparecer no anexo. Aqui pode ser qualquer string.
-
-O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
-
-O terceito é o tipo do arquivo que você está anexando, em alguma linguagens existe um enum que facilita esse ponto.
 
   Aqui vai uma dica de tipos de arquivos que podemos adicionar:
 
@@ -82,6 +78,8 @@ O terceito é o tipo do arquivo que você está anexando, em alguma linguagens e
 
 
 ### Exemplo
+
+Na imagem a baixo podemos observar um teste que falhou, e no body do teste temos os anexos de varios tipos, CSV e JPG por exemplo.
 
 <p align="center">
     <img src="https://docs.qameta.io/allure/images/testcase.png" alt="Exemplo">
@@ -103,4 +101,4 @@ O terceito é o tipo do arquivo que você está anexando, em alguma linguagens e
 
  ## Cuidados
 
-  Você literalmente pode armazenar quanta informação quiser e isso pode fazer com que você tenha problemas com espaço, dependendo de onde o seu relatório é geraodo. 
+  Você literalmente pode armazenar quanta informação quiser e isso pode fazer com que você tenha problemas com espaço, dependendo de onde o seu relatório é gerado. 
