@@ -75,7 +75,7 @@ Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passo
 
 ### Exemplo
 
-Na imagem a baixo podemos observar um teste que falhou, e no body do teste temos os anexos de varios tipos, CSV e JPG por exemplo.
+Na imagem a baixo podemos observar um teste que falhou, e no body do teste temos os anexos de vários tipos, CSV e JPG por exemplo.
 
 <p align="center">
     <img src="https://docs.qameta.io/allure/images/testcase.png" alt="Exemplo">
