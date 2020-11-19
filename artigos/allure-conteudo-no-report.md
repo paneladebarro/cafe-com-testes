@@ -39,7 +39,7 @@ Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::C
 > o segundo se refere ao conteúdo, que pode ser um texto, uma imagem, um vídeo, um CSV, entre outros. 
 > o terceiro é o tipo do arquivo que você está anexando, em alguma linguagens existe um _enum_ que facilita esse ponto.
 
-ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
+Você também pode adicionar essa linha de código dentro do 'AfterEach' e os anexos irão ser adicionados dentro dos resultados de cada um dos seus testes. 
 
 Exemplo:
 ```javascript jest
