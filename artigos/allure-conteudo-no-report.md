@@ -28,22 +28,26 @@ Pensando em um caso de teste padrão usando javascript, onde temos um 'Describe'
 
 ```javascript
 reporter.addAttachment(name: string, buffer: any, type: string)
-  
+```
+
 Mesmo exemplo em Ruby:
 
 ```ruby
 Allure.add_attachment(name: "attachment", source: "Some string", type: Allure::ContentType::TXT, test_case: false)
+```
 
-Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique se de ter a informação que deseja anexar.
+Lembrando que os as linhas de código podem ser adicionadas a qualquer momento do teste. Apenas se certifique de ter a informação que deseja anexar.
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
   ou é possivel adicionar a linha de código dentro do 'AfterEach' e os anexos irão para dentro do teste. 
 
   Exemplo:
+  ```javascript jest
     afterEach(() => {
       reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
     })
+  ```
 
 Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
 Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
@@ -53,9 +57,9 @@ Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passo
 
 Podemos anexar qualquer coisa na real, então vamos quebrar um pouuco o código. 
 
-```javascript
+```javascript jest
 reporter.addAttachment(name: string, buffer: any, type: string)
-
+```
 O primeiro parâmetro é o nome que aparecer no anexo. Aqui pode ser qualquer string.
 
 O segundo se refere ao contéudo, que pode ser um texto, uma imagem, um vídeo, um CSV entre outros. 
