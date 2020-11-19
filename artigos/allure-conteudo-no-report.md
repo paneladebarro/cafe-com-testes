@@ -52,7 +52,7 @@ Lembrando, que 'body' é o nome que será dado ao seu anexo, e o 'response['body
 
 > Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
 
-Já quem utilizar o BDD como guia de execução dos testes podemos adicionar o contéudo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
+Já quem utilizar o BDD como guia de execução dos testes pode adicionar o conteúdo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
 Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
 
 
