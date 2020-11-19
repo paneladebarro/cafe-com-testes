@@ -47,18 +47,17 @@ Exemplo:
     reporter.addAttachment('body', JSON.stringify(response['body']), 'text/json')
   })
 ```
-Desta forma não sera obrigatório colocar o "addAttachment" em cada teste, e sim apenas uma vez. 
+Desta forma não será obrigatório colocar o "addAttachment" em cada teste, e sim apenas uma vez. 
 Lembrando, que 'body' é o nome que será dado ao seu anexo, e o 'response['body']' é uma variável global do teste, que fica reciclando com o resultado da reposta da chamada de API.
 
-> Não será necessário fazer nenhum import no JS Jest, porque é feita a injeção em tempo de execução.
+> Não será necessário fazer nenhum import no Jest, porque é feita a injeção em tempo de execução.
 
 Já quem utilizar o BDD como guia de execução dos testes pode adicionar o conteúdo dentro da Feature, utilizando o afterFeature que alguns frameworks dão suporte. 
 Dentro do cenário usando um 'afterScenario' o anéxo ira para o final dos passos.
 
-
 ### O que anexar ? 
 
-  Aqui vai uma dica de tipos de arquivos que podemos adicionar:
+Aqui vai uma dica de tipos de arquivos que podemos adicionar:
 
 * "text/plain"
 * "application/xml"
