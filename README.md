@@ -65,6 +65,9 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 ### U
 - [Utilizando SuperTest para os testes de Integração](artigos/supertest.md)
 
+### V
+- [Validando as alterações no CircleCI antes do push](artigos/circleci-validate.md)
+
 ## :heart: Como contribuir
 
 A ideia do Café com Testes é ser um conteúdo simples, direto e que após sua leitura o time possa virar pro lado e já aplicar o que aprendeu. 
