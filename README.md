@@ -61,6 +61,7 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ### T
 - [Try/Catch: deixe os testes lidarem com as exceções](artigos/try-catch-nos-testes.md)
+- [Teste o comportamento, não a implementação](artigos/teste-comportamento-nao-implementacao.md)
 
 ### U
 - [Utilizando SuperTest para os testes de Integração](artigos/supertest.md)
