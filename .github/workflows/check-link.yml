@@ -1,0 +1,19 @@
+name: Checar os links em .md
+
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+  push:
+  pull_request:
+
+jobs:
+  check-link:
+
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: Project checkout
+      uses: actions/checkout@v2
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+  
