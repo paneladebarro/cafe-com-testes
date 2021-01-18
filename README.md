@@ -24,21 +24,11 @@
 
 ## 🤖 Navegue
 
-- [🤖 Navegue](#-navegue)
-- [:dart: A iniciativa](#dart-a-iniciativa)
-- [:heavy_check_mark: Índice de Artigos](#heavy_check_mark-índice-de-artigos)
-  - [A](#a)
-  - [C](#c)
-  - [E](#e)
-  - [H](#h)
-  - [N](#n)
-  - [R](#r)
-  - [T](#t)
-  - [U](#u)
-  - [V](#v)
-- [:heart: Como contribuir](#heart-como-contribuir)
-- [:rotating_light: Código de conduta](#rotating_light-código-de-conduta)
-- [:memo: Licença](#memo-licença)
+- [A iniciativa](#dart-a-iniciativa)
+- [Como contribuir](#heart-como-contribuir)
+- [Código de conduta](#rotating_light-código-de-conduta)
+- [Licença](#memo-licença)
+- [Índice de Artigos](#heavy_check_mark-indice-de-artigos)
 
 
 ## :dart: A iniciativa

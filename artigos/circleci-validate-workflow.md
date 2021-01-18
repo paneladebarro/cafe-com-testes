@@ -6,13 +6,13 @@
 
 # Validando e visualizando os Fluxos de Trabalho do Circle CI 
 
-O [CircleCI](https://circleci.com/) é uma ferramenta extremamente complexa, sendo assim, em várias ocasiões nos deparamos com algumas dificuldades sendo uma delas o controle dos fluxos de trabalho. A ideia desse artigo é que você possa visualizar de forma gráfica o fluxo de trabalho e possa visualizar eles em diferentes branches para nos ajudar naqueles casos mais complexos em que as rotinas e fluxos variam de acordo com a branch em execução.
+O [CircleCI](https://circleci.com/) é uma ferramenta que tem por necessidade em casos de novos projetos ou mudanças, subirmos as alterações que fazemos e acompanharmos a execução lá. Sendo assim, em várias ocasiões nos deparamos com algumas dificuldades sendo uma delas o controle dos fluxos de trabalho. A ideia desse artigo é que você possa visualizar de forma gráfica o fluxo de trabalho e possa visualizar eles em diferentes branches para nos ajudar naqueles casos mais complexos em que as rotinas e fluxos variam de acordo com a branch em execução.
 
-Para isso existe um projeto que estarei compartilhando com vocês , que nasceu com a proposta de nos ajudar nisso. Se você estiver lutando para gerenciar uma configuração complexa do Circle CI 2, você vai gostar de conhecer esse recurso.
+Para isso existe um projeto que irei compartilhar com vocês, que nasceu com a proposta de nos ajudar nisso. Se você estiver lutando para gerenciar uma configuração complexa do Circle CI 2, você vai gostar de conhecer esse recurso.
 
-O [Circleci Workflow Validator](https://github.com/JackuB/circleci-workflow-validator) te entrega a possibilidade de pegar o seu arquivo yml, fazer uma leitura dele e gerar pra você ontime o fluxo gráfico , sem que seja necessário você subir para o Circle CI , e em alguns casos descobrir que faltava algum detalhe ou que tinha algo errado no fluxo.
+O [Circleci Workflow Validator](https://github.com/JackuB/circleci-workflow-validator) te entrega a possibilidade de pegar o seu arquivo yml, fazer uma leitura dele e gerar pra você ontime o fluxo gráfico, sem que seja necessário você subir para o Circle CI, e em alguns casos descobrir que faltava algum detalhe ou que tinha algo errado no fluxo.
 
-Para melhor entendimento , vamos levar para um cenário prático. Dado que temos a configuração a seguir e queremos validar o fluxo de trabalho dela:
+Para melhor entendimento, vamos levar para um cenário prático. Dado que temos a configuração a seguir e queremos validar o fluxo de trabalho dela:
 
 ```yml
 version: 2.1
@@ -190,20 +190,15 @@ Seguiremos os seguintes passos para validarmos se o fluxo está atendendo o que 
 2. Pegaremos o código que queremos validar e colaremos ele no campo da esquerda
 3. Uma vez feito isso ele irá gerar a visualização do workflow 
 
-Mágico né? Mas tem outra coisa muito legal ainda. Se observar no nosso arquivo yml de exemplo o job test-integration roda somente quando está na branch master, e para ver isso acontecendo basta que na parte superior do site você coloque a branch master e verá esse job no workflow. E caso queira ver o caso em que não é a branch master bastará inserir outro nome de branch, como branch teste , por exemplo. Então, você visualizará como ficará esse fluxo, isso dará a visibilidade que precisa do fluxo com o filtro e sem o filtro, assim como outros aspectos que sabemos que existem muitos no Circle CI.
-
+Mágico né? Mas tem outra coisa muito legal ainda. Se observar no nosso arquivo yml de exemplo o job `test-integration` roda somente quando está na branch `master`, e para ver isso acontecendo basta que na parte superior do site você coloque a branch `master` e verá esse job no workflow. E caso queira ver o caso em que não é a branch `master` bastará inserir outro nome de branch, como branch `teste` , por exemplo. Então, você visualizará como ficará esse fluxo, isso dará a visibilidade que precisa do fluxo com o filtro e sem o filtro, assim como outros aspectos que sabemos que existem muitos no _Circle CI_.
 Veja nas imagens:
-
-Simulando o workflow da branch teste:
-
+Simulando o workflow da branch `teste`:
 <p align="left">
   <a href="https://github.com/pagarme/cafe-com-testes">
     <img src="../.github/validator-workflow-ci1.png">
   </a>
 </p>
-
-Simulando o workflow com a branch master:
-
+Simulando o workflow com a branch `master`:
 <p align="left">
   <a href="https://github.com/pagarme/cafe-com-testes">
     <img src="../.github/validator-workflow-ci2.png">
