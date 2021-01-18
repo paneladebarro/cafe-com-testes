@@ -24,11 +24,21 @@
 
 ## 🤖 Navegue
 
-- [A iniciativa](#dart-a-iniciativa)
-- [Como contribuir](#heart-como-contribuir)
-- [Código de conduta](#rotating_light-código-de-conduta)
-- [Licença](#memo-licença)
-- [Índice de Artigos](#heavy_check_mark-indice-de-artigos)
+- [🤖 Navegue](#-navegue)
+- [:dart: A iniciativa](#dart-a-iniciativa)
+- [:heavy_check_mark: Índice de Artigos](#heavy_check_mark-índice-de-artigos)
+  - [A](#a)
+  - [C](#c)
+  - [E](#e)
+  - [H](#h)
+  - [N](#n)
+  - [R](#r)
+  - [T](#t)
+  - [U](#u)
+  - [V](#v)
+- [:heart: Como contribuir](#heart-como-contribuir)
+- [:rotating_light: Código de conduta](#rotating_light-código-de-conduta)
+- [:memo: Licença](#memo-licença)
 
 
 ## :dart: A iniciativa
@@ -68,6 +78,7 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ### V
 - [Validando as alterações no CircleCI antes do push](artigos/circleci-validate.md)
+- [Validando e visualizando os Fluxos de Trabalho do Circle CI](artigos/circleci-validate-workflow.md)
 
 ## :heart: Como contribuir
 
