@@ -4,9 +4,9 @@
   </a>
 </p>
 
-# Validando e visualizando os Fluxos de Trabalho do Circle CI 
+# Validando e visualizando os Fluxos de Trabalho do Circle CI
 
-O [CircleCI](https://circleci.com/) é uma ferramenta que tem por necessidade em casos de novos projetos ou mudanças, subirmos as alterações que fazemos e acompanharmos a execução lá. Sendo assim, em várias ocasiões nos deparamos com algumas dificuldades sendo uma delas o controle dos fluxos de trabalho. A ideia desse artigo é que você possa visualizar de forma gráfica o fluxo de trabalho e possa visualizar eles em diferentes branches para nos ajudar naqueles casos mais complexos em que as rotinas e fluxos variam de acordo com a branch em execução.
+O [CircleCI](https://circleci.com/) tem limitações na validação do seu arquivo de configuração não contemplando o workflow criado. Sendo assim, em várias ocasiões nos deparamos com algumas dificuldades sendo uma delas o controle dos fluxos de trabalho. A ideia desse artigo é que você possa visualizar de forma gráfica o fluxo de trabalho, e possa visualizar ele em diferentes branches para ajudar naqueles casos mais complexos em que as rotinas e fluxos variam de acordo com a branch em execução.
 
 Para isso existe um projeto que irei compartilhar com vocês, que nasceu com a proposta de nos ajudar nisso. Se você estiver lutando para gerenciar uma configuração complexa do Circle CI 2, você vai gostar de conhecer esse recurso.
 
@@ -191,14 +191,19 @@ Seguiremos os seguintes passos para validarmos se o fluxo está atendendo o que 
 3. Uma vez feito isso ele irá gerar a visualização do workflow 
 
 Mágico né? Mas tem outra coisa muito legal ainda. Se observar no nosso arquivo yml de exemplo o job `test-integration` roda somente quando está na branch `master`, e para ver isso acontecendo basta que na parte superior do site você coloque a branch `master` e verá esse job no workflow. E caso queira ver o caso em que não é a branch `master` bastará inserir outro nome de branch, como branch `teste` , por exemplo. Então, você visualizará como ficará esse fluxo, isso dará a visibilidade que precisa do fluxo com o filtro e sem o filtro, assim como outros aspectos que sabemos que existem muitos no _Circle CI_.
+
 Veja nas imagens:
+
 Simulando o workflow da branch `teste`:
+
 <p align="left">
   <a href="https://github.com/pagarme/cafe-com-testes">
     <img src="../.github/validator-workflow-ci1.png">
   </a>
 </p>
+
 Simulando o workflow com a branch `master`:
+
 <p align="left">
   <a href="https://github.com/pagarme/cafe-com-testes">
     <img src="../.github/validator-workflow-ci2.png">
