@@ -68,6 +68,7 @@ O Café com Testes é uma iniciativa interna da Pagar.me para compartilhar conhe
 
 ### V
 - [Validando as alterações no CircleCI antes do push](artigos/circleci-validate.md)
+- [Validando e visualizando os Fluxos de Trabalho do Circle CI](artigos/circleci-validate-workflow.md)
 
 ## :heart: Como contribuir
 
