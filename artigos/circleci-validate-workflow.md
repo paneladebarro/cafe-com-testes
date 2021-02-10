@@ -10,7 +10,7 @@ O [CircleCI](https://circleci.com/) tem limitações na validação do seu arqui
 
 Para isso existe um projeto que irei compartilhar com vocês, que nasceu com a proposta de nos ajudar nisso. Se você estiver lutando para gerenciar uma configuração complexa do Circle CI 2, você vai gostar de conhecer esse recurso.
 
-O [Circleci Workflow Validator](https://github.com/JackuB/circleci-workflow-validator) te entrega a possibilidade de pegar o seu arquivo yml, fazer uma leitura dele e gerar pra você ontime o fluxo gráfico, sem que seja necessário você subir para o Circle CI, e em alguns casos descobrir que faltava algum detalhe ou que tinha algo errado no fluxo.
+O [Circleci Workflow Validator](https://github.com/JackuB/circleci-workflow-validator) te entrega a possibilidade de pegar o seu arquivo yml, fazer uma leitura dele e gerar pra você em tempo real o fluxo gráfico, sem que seja necessário você subir para o Circle CI, e em alguns casos descobrir que faltava algum detalhe ou que tinha algo errado no fluxo.
 
 Para melhor entendimento, vamos levar para um cenário prático. Dado que temos a configuração a seguir e queremos validar o fluxo de trabalho dela:
 
